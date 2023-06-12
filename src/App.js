@@ -1,6 +1,11 @@
+import ExpenseItem from "./components/ExpenseItem";
+
 function App() {
     return (
-        <div>Welcome to REACT</div>
+        <div>
+            Welcome to REACT
+            <ExpenseItem></ExpenseItem>
+        </div>
     );
 }
 
