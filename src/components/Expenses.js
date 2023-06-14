@@ -1,13 +1,14 @@
 import ExpenseItem from "./ExpenseItem";
+import './Expenses.css';
 
 function Expenses(props) {
-    const expenses = props.expenses;
+    const item = props.item;
     return (
-        <div>
-            <ExpenseItem name={expenses[0].name} price={expenses[0].price} date={expenses[0].date}/>
-            <ExpenseItem name={expenses[1].name} price={expenses[1].price} date={expenses[1].date}/>
-            <ExpenseItem name={expenses[2].name} price={expenses[2].price} date={expenses[2].date}/>
-            <ExpenseItem name={expenses[3].name} price={expenses[3].price} date={expenses[3].date}/>
+        <div className="expenses">
+            <ExpenseItem name={item[0].name} price={item[0].price} date={item[0].date}/>
+            <ExpenseItem name={item[1].name} price={item[1].price} date={item[1].date}/>
+            <ExpenseItem name={item[2].name} price={item[2].price} date={item[2].date}/>
+            <ExpenseItem name={item[3].name} price={item[3].price} date={item[3].date}/>
         </div>
     );
 }
